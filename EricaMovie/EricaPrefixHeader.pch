@@ -1,0 +1,39 @@
+//
+//  EricaPrefixHeader.pch
+//  EricaMovie
+//
+//  Created by LakesMac on 15/9/23.
+//  Copyright (c) 2015年 LakesMac. All rights reserved.
+//
+
+#ifndef EricaMovie_EricaPrefixHeader_pch
+#define EricaMovie_EricaPrefixHeader_pch
+
+
+#define eTabBarTag_Activity 1000
+#define eTabBarTag_Movie    1001
+#define eTabBarTag_Theater  1002
+
+#define kScreenBounds ([UIScreen mainScreen].bounds)
+#define kTableView_Rect CGRectMake(0, 0, kScreenBounds.size.width, kScreenBounds.size.height - 113)
+#define kMainTintColor ([UIColor colorWithRed:32/255. green:184/255. blue:248/255. alpha:1])
+#define kMainTitleBackgroundColor ([UIColor colorWithRed:240/255. green:240/255. blue:240/255. alpha:1])
+#define kMainWaitImage [UIImage imageNamed:@"waitImage"]
+
+
+
+#define kAction_URL @"http://project.lanou3g.com/teacher/yihuiyun/lanouproject/activitylist.php"
+#define kMovie_URL @"http://project.lanou3g.com/teacher/yihuiyun/lanouproject/movielist.php"
+#define kMovieInfo_URL @"http://project.lanou3g.com/teacher/yihuiyun/lanouproject/searchmovie.php?movieId="
+#define kTheater_URL @"http://project.lanou3g.com/teacher/yihuiyun/lanouproject/cinemalist.php"
+#define kTheaterInfo_URL @"http://project.lanou3g.com/teacher/yihuiyun/lanouproject/searchcinema.php?cinemaId="
+
+
+#import "LakeImageDownloader.h"
+#import "GMDCircleLoader.h"
+#import "ListButton.h"
+#import "UsersControl.h"
+#import "LoginView.h"
+#import "UIShakeView.h"
+
+#endif
